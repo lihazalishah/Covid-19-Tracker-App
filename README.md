@@ -1,15 +1,22 @@
-# covidapp
+# Covid-19 Tracker APP with api Intergation
 
 A new Flutter project.
 
-## Getting Started
+## Features 
 
-This project is a starting point for a Flutter application.
+1) splash screen
+2) Home screen with world stat of covid-19 throught Api intergation
+3) COUNTRIES list also country wise tracking for covid-19
 
-A few resources to get you started if this is your first Flutter project:
+Api of the project
+-class AppUrl {
+  //base url
+  static const String baseUrl = 'https://disease.sh/v3/covid-19/';
+  //fatch world covid state
+  static const String worldStateApi = baseUrl + 'all';
+  static const String countriesList = baseUrl + 'countries';
+}
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
